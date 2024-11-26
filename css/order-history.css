@@ -1,0 +1,87 @@
+@media (max-width: 1024px) {
+  /* Apply the styles when the screen width is 1024px or smaller */
+  .status-circle {
+    display: none !important; /* Set display to none for circles */
+  }
+}
+
+.product.disabled-overlay::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #858585;
+  opacity: 0.5; 
+  pointer-events: none; 
+  z-index: 1; 
+  cursor: not-allowed;
+  border-radius: 15px;
+}
+
+.product.permount-zero::after {
+  content: 'สินค้าหมด \A สามารถแลกได้เดือนถัดไป';
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  position: absolute;
+  top: 40%; 
+  left: 0;
+  width: 100%; 
+  background: #28B7E1; 
+  color: rgb(255, 255, 255); 
+  padding: 10px 10px; 
+  z-index: 2; 
+  font-size: 1.875rem;
+  white-space: pre; 
+  text-align: center;
+  line-height: 1.5; 
+}
+.product.permount-zero2::after {
+  content: 'หมดเขตการแลก \A สามารถแลกได้เดือนถัดไป';
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  position: absolute;
+  top: 40%; 
+  left: 0;
+  width: 100%; 
+  background: #28B7E1; 
+  color: rgb(255, 255, 255); 
+  padding: 10px 10px; 
+  z-index: 2; 
+  font-size: 1.875rem;
+  white-space: pre; 
+  text-align: center;
+  line-height: 1.5; 
+}
+.product.permount-zero3::after {
+  content: 'Coming soon..';
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  position: absolute;
+  top: 40%; 
+  left: 0;
+  width: 100%; 
+  background: #28B7E1; 
+  color: rgb(255, 255, 255); 
+  padding: 10px 10px; 
+  z-index: 2; 
+  font-size: 1.875rem;
+  white-space: pre; 
+  text-align: center;
+  line-height: 1.5; 
+}
+
+.product {
+  position: relative; /* Needed for absolute positioning of the overlay */
+}
+
+@media (max-width:376px) {
+  .product.permount-zero::after{
+    font-size: 1.5rem;
+  }
+}
